@@ -6,9 +6,9 @@ from . import exceptions, redis
 
 def create_app(config):
     app = flask.Flask(__name__)
-    app.config.from_object(config)
+    #app.config.from_object(config)
 
-    app.redis = redis.create_redis(app.config["DATABASE_KWARGS"])
+    #app.redis = redis.create_redis(app.config["DATABASE_KWARGS"])
 
     with app.app_context():
         from .blueprints import api, auth, index, projects
