@@ -1,6 +1,6 @@
 from zaneapi import create_app
-from config import Config
-
+#from config import Config
+Config = 'api'
 app = create_app(Config)
 
 if __name__ == "__main__":
